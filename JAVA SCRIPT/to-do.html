@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do</title>
+</head>
+<body>
+    <form>
+        <label for="">Entre your Task</label>
+        <input placeholder="Entre Task" id="input" type="text">
+        <button onclick="addTask()">Add Task</button>
+        <!-- <button onclick="removeTask()">Remove Task</button> -->
+    </form>
+    <ul id="taskList">
+    </ul>
+    <script>
+        const list=document.getElementById("taskList");
+        function addTask(){
+            event.preventDefault(); // Prevent the default form submission behavior
+            const value = document.getElementById("input").value; // Get the value entered in the input field
+            const li=document.createElement("li"); // Create a new list item element
+            const button=document.createElement("button"); // Create a new button element
+            button.textContent="Remove"; // Set the text content of the new button to "Remove"
+            button.onclick=function(){
+                list.removeChild(li); // Remove the new list item from the task list when the button is clicked
+            }
+            li.textContent=value; // Set the text content of the new list item to the entered value
+            list.appendChild(li); // Append the new list item as a child of the task list
+            li.appendChild(button); // Append the new button as a child of the new list item
+            
+        }
+
+        // function removeTask(){
+        //     event.priventDefault(); // Prevent the default form submission behavior
+        //     const value= document.getElementById("input").value; // Get the value entered in the input field
+        //     const li=document.createElement("li"); // Create a new list item element
+        //     li.textContent=value; // Set the text content of the new list item to the entered value
+        //     list.removeChild(li); // Remove the new list item from the task list
+        // }
+
+
+    </script>
+</body>
+</html>

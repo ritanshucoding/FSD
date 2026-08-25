@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener</title>
+</head>
+<body>
+    <h1>addEventListener</h1>
+    <button id="btn">Click Me</button>
+    <script>
+        var btn=document.getElementById("btn");
+        btn.addEventListener("click",function(){ // Add an event listener to the button for the "click" event
+            alert("Button Clicked"); // Show an alert when the button is clicked
+            document.getElementById("btn").style.backgroundColor="red"; // Change the background color of the button to red
+        });
+    </script>
+</body>
+</html>

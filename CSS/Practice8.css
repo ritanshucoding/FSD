@@ -1,0 +1,35 @@
+/* Qs1.Givetheh1headerauniqueid-“mainTopic”&setitscolortoblueusingtheidselector */
+#mainTopic{
+    color: blue;
+}
+/* Qs2.Alignallthetextinthepagetothecenterusingauniversalselector */
+*{
+    text-align: center;
+}
+/* Qs3.Changethefontstyleofallheadingtagsinthepageto‘Georgia’. */
+h1 , h3 ,h5 {
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+/* Qs4.Setthecolorofalltheparagraphstowhite&backgroundcolortocornflowerblue.(Withoutusingtheelementselector-‘p’ */
+#PARAGRAPH{
+    color: white;
+    background-color: cornflowerblue;
+/* Qs5.Selectallbuttonsinsidedivandchangetheirbackgroundcolortopurple&textcolortoazure */
+}
+div button{
+    background-color: purple;
+    color: azure;
+}
+/* Qs6.Changethebuttonbackgroundcolortoyellow&textcolortobluewhenwehoveroverit */
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+/* Qs7.Changethecolorofeveryoddnumberedparagraphtoyellow.(Paragraph1&3 */
+#PARAGRAPHODD{
+    color: yellow;
+}
+/* Qs8.Changethecolorofthefirstletterofh1headingtored */
+h1::first-letter{
+    color: red;
+}

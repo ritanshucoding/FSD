@@ -1,0 +1,22 @@
+h2{
+    color:orange;   
+}
+p{
+    background-color: black;
+    color: white;
+}
+button{
+    color: white;
+    background: blue;
+}
+/* HEXADECIMAL COLOUR  CODE */
+h1{
+    color: #000000;
+}
+h3{
+    color: #ffffff;
+    background-color: #aded95;
+}
+h4{
+    color: rgb(225, 225, 0);
+}

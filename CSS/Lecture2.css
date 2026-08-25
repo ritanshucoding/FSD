@@ -1,0 +1,21 @@
+/* TEXT ALIGN PROPOERTY. */
+/* FOR MOVING ANY TEXT AT ANY POSITION. */
+h1{
+    text-align: center;
+    /* FOR BORDER */
+    border: solid;
+    /* FOR BORDER AREA */
+    width: 55ex;
+    text-decoration: double blue underline ;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h2{
+    text-align: center;
+    font-weight: 700;
+    text-decoration:line-through;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

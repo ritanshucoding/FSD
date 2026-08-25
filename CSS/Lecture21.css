@@ -1,0 +1,30 @@
+h3{
+    color: black;
+}
+.one{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: 2px solid black;
+    text-align: center;
+    /* (z-INDEX)- it decide the stack level of elements
+Overlapping element with a larger z-INDEX cover those with a smaller one. */
+    position: relative;
+    z-index: 1;
+}
+.two{
+    height: 100px;
+    width: 100px;
+    background-color: bisque;
+    border: 2px solid black;
+    text-align: center;
+    bottom: 50px;
+    
+}
+.three{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border: 2px solid black;
+    text-align: center;
+}

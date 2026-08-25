@@ -1,0 +1,46 @@
+/* CSS ANIMATION--To animate CSS elements */
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+
+    /* animation-name: widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 0;
+     animation-iteration-count: 3;  /* (ANIMATION KITNE TIME DIKHANA HAI)  */
+     /* animation-direction: normal;  */
+
+
+     /* ANIMATION SHORTHAND  ( OPTIONAL)*/
+     /* animation: myName 2s linear 3s infintite normal */
+     animation: widthAnimate  3s ease-in 0s infinite normal ;
+}
+@keyframes fontAnimation{
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: 40px;
+    }
+}
+@keyframes colorAnimate{
+    from{
+        background-color: green;
+    }
+    to{
+        background-color:blue ;
+    }
+
+}
+@keyframes widthAnimate{
+    form{
+        width: 10px;
+        background-color: green;
+    }
+    to{
+        width: 400px;
+        background-color:blue ;
+        border-radius: 15px;
+    }
+}

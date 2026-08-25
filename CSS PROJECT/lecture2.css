@@ -1,0 +1,135 @@
+/* UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+}
+
+.main_box {
+  background: url("https://w0.peakpx.com/wallpaper/487/562/HD-wallpaper-bmw-logo-bmw-logo.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Toggle button (open) */
+.btn_one {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  transition: all 0.5s ease;
+}
+
+/* Sidebar header */
+.sidebar_menu_logo {
+  position: absolute;
+  width: 100%;
+  line-height: 70px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Logo text */
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 60px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  top: 12px;
+  
+}
+
+/* Close button */
+.sidebar_menu .btn_two {
+  position: absolute;
+  left: 270px;
+  font-size: 24px;
+  color: white;
+  line-height: 60px;
+  cursor: pointer;
+}
+
+/* Menu items */
+.sidebar_menu .menu {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+}
+
+.sidebar_menu .menu li {
+  list-style: none;
+  padding: 15px 20px;
+}
+
+.sidebar_menu .menu i,
+.sidebar_menu .menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar_menu .menu i {
+  margin-right: 10px;
+}
+
+/* Social icons */
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+}
+
+.sidebar_menu .social_media i {
+  color: white;
+  opacity: 0.5;
+  padding: 0 5px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+.sidebar_menu .menu li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Checkbox for toggle */
+#check {
+  display: none;
+}
+
+/* When checked, slide menu in */
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+
+/* Hide open button when checked */
+#check:checked ~ .btn_one i {
+  opacity: 0;
+}
+
+/* Show close button when checked */
+#check:checked ~ .sidebar_menu .btn_two i {
+  opacity: 1;
+}

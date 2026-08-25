@@ -1,0 +1,28 @@
+/* DISPLAY FLEX - its set how flex items are placed in the flex container, along which axis and direction */
+#container{
+    height: 300px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+     border: 2px solid black; 
+     /* (DISPLAY FLEX) */
+    display: flex;
+    flex-direction: row;
+    /* JUSTIFY CONTENT- tell how the browser distribute space between and around content item along the main-axis */
+    justify-content: space-between;
+    /* FLEX WRAP-Sets whether flex item are forced onto one line or can wrap onto a multiple line */
+    flex-wrap: wrap-reverse;
+    /* ALIGN CONTENT- property sets the distribution of space between and around content items along a  cross axis, or a grid or block-level element's block axis. */
+    align-content: flex-start;
+    /* The ALIGN SELF- property specifies the alignment in the block direction for the INDIVIDUAL item inside a flexbox or grid container */
+
+h1{
+    text-align: center;
+}
+#container div{
+    height: 100px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    font-size: 1.5m;
+}

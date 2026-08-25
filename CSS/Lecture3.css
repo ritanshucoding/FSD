@@ -1,0 +1,52 @@
+/* UNIVERSAL SELECTOR ( pure code pe css apply krne ke liye use hota hai) */
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    background-color: wheat!important;
+}
+h1 , h3{
+    color: #b92b27;
+}
+/* ID Selector
+Select an element based on the value of the element's id attribute */
+#login{
+    background-color: white;
+}
+#signup{
+    background: #b92b27;
+    color: white;
+}
+/* CLASS Selector
+Select an element based on their class attribute */
+.upvote{
+    background-color: green;
+}
+/* DESCENDANT SELECTOR */
+p a {
+    color: purple;
+    background-color: yellow;
+}
+/* ADJACENT SIBLING COMBINATOR */
+p+h3{
+    text-decoration: underline;
+}
+.upvote+button{
+    background-color: cornflowerblue;
+}
+/* CHILD COMBINATOR */
+/* Eg- Select all buttons which are direct children of spans */
+div>input{
+    color: white;
+    background-color: rgb(224, 236, 135);
+    
+}
+/* ATTRIBUTE SELECTOR */
+/* Selects element based om the presence or value of a given attribute */
+input[type="text"]{
+    color: red;
+}
+input[type="password"]{
+    color: green  /;
+}
+/*  !important ( sbse important properties in CSS . Never change any prorpertis after use !important. */

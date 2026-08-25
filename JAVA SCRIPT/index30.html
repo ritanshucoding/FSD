@@ -1,0 +1,43 @@
+<!-- DOM-3 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-3</title>
+    <style>
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .pink{
+            background-color: pink;
+        }
+    </style>
+ </head>
+ <body>
+    <h1 id="heading" class="red">Document Object Model</h1>
+    <button onclick="green()">Green</button>
+    <button onclick="blue()">Blue</button>
+    <button>Red</button>
+    <button>Pink</button>
+    <script>
+        var ele=document.getElementById("heading"); // getElementById
+        function blue(){
+            ele.setAttribute("style","background-color:blue"); // Change background color to blue when the button is clicked
+            console.log(ele.getAttribute("style")); // Get the current style attribute of the element
+        }
+
+        var ele=document.getElementById("heading"); // getElementById
+        function green(){
+            ele.classList.add("green");
+            console.log(ele.classList);
+        }
+    </script>
+ </body>
+ </html>

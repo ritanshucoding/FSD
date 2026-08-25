@@ -1,0 +1,25 @@
+<!-- DOM-4 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-4</title>
+ </head>
+ <body>
+    <div id="container">
+        <h1 id="child1">Adfar</h1>
+        <h1 id="child2">Adfar</h1>
+        <h1 id="child3">Adfar</h1>
+    </div>
+    <button onclick="fun()">Click me</button>
+    <script>
+        var ele=document.getElementById("container"); // getElementById
+        function fun(){
+            console.log(ele.children); // Get all the children of the element with id "container"
+            console.log(ele.firstElementChild); // Get the first child of the element with id "container"
+            console.log(ele.lastElementChild); // Get the last child of the element with id "container"
+        }
+    </script>
+ </body>
+ </html>

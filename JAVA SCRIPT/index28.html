@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading"> Document Object Model</h1>
+    <p class="info"> This is para</p>
+    <h2 class="info"> This is heading 2</h2>
+    <b class="info">This is bold text</b>
+    <div class="main"> <span> Hello good morning</span>
+    </div>
+    <button onclick="changeText()">Click me</button>
+    <form>
+        <input type"text" name="para">
+        <input type="email" name="para" id="">
+    </form>
+    <script>
+        var ele=document.getElementsByName("para"); // getElementsByName
+        function changeText(){
+            for(var i=0;i<ele.length;i++){
+                ele[i].textContent="Text changed!"; // Change the text of all elements with name "para"
+                ele[i].style.backgroundColor="yellow"; // Change background color of all elements with name "para"
+            }
+        }
+
+
+        // var ele=document.getElementsByTagName("h1"); // getElementsBy TagName
+        // function changeText(){
+        //     for(var i=0;i<ele.length;i++){
+        //         ele[i].textContent="Text changed!"; // Change the text of all h1 elements
+        //         ele[i].style.backgroundColor="yellow"; // Change background color of all h1 elements
+        //     }
+        // }
+
+
+        // var ele=document.getElementsByClassName("info"); // getElementsByClassName
+        // function changeText(){
+        //     console.log(ele);
+        //     ele[0].style.backgroundColor="yellow"; // Change background color of first element with class "info"
+        //     ele[1].style.backgroundColor="green"; // Change background color of second element with class "info"
+        // }
+
+
+        // Functional Programming:  Function to change the text of the heading when the button is clicked
+        // function changeText() {
+        //     var ele=document.getElementById("heading"); // getElementById
+        //     ele.textContent="Text changed!";
+        //     ele.style.backgroundColor="yellow"; // Change background color when the text is changed or Button is clicked
+        // }
+    </script>
+</body>
+</html>

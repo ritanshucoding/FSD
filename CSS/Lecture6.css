@@ -1,0 +1,26 @@
+h2{
+    display: block;
+    background-color: pink;
+    border: 2px solid black;
+}
+/*  SPAN IS A INLINE PROPERTIES  (WE TRY TO CONVERT INTO BLOCK ELEMENT.)*/
+span{
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    /* {FOR LEFT SIDE SPACE} */
+     padding: 50px;
+       /* { FOR RIGHT SIDE SPACE}  */
+    margin: 20px;
+}
+div{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    border: 2px solid black;
+    /*  MARGIN-- FOR A SPACE BETWEEN TWO BLOCK */
+    margin: 5px;
+    /* IF WE WANT TO PRINT ALL BLOCK O SAME INLINE */
+    /* PROPRETIES INLINE BLOCK ELEMENT  */
+    display: inline-block;
+}

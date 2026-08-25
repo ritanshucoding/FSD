@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure CSS Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .row {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .col-4 {
+            width: 33.33%;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: aliceblue;
+            
+        }
+
+        .col-3 {
+            width: 25%;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: burlywood;
+            
+        }
+
+        .border {
+            border: 1px solid #ccc;
+        }
+
+        footer {
+            margin-top: 30px;
+        }
+
+        h2 {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>TITLE</h2>
+
+        <div class="row">
+            <div class="col-4 ">B1</div>
+            <div class="col-4 ">B2</div>
+            <div class="col-4 ">B3</div>
+        </div>
+
+        <div class="row">
+            <div class="col-3 ">B4</div>
+            <div class="col-3 ">B5</div>
+            <div class="col-3 ">B6</div>
+            <div class="col-3 ">B7</div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 ">B8</div>
+            <div class="col-4 ">B9</div>
+            <div class="col-4 ">B10</div>
+        </div>
+
+        <footer>
+            <h2>FOOTER</h2>
+        </footer>
+    </div>
+</body>
+</html>

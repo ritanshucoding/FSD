@@ -1,0 +1,33 @@
+<!-- DOM-2  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 2</title>
+    <style>
+        .container  #selection .content{
+            background-color: red;
+        }
+    </style>
+ </head>
+ <body>
+    <h1 id="heading">DOM</h1>
+    <p class="para">This is a paragraph.</p>
+    <h2 class="main"> Ritansh Tiwari</h2>
+    <div class="container">
+        <h1 class="content">Hello</h1>
+        <div id="selection">
+            <h1 class="content">Hello</h1>
+        </div>
+    </div>
+    <button onclick="checkText()">Click Me</button>
+    <h1 class="content">Good morning</h1>
+    <script>
+        var ele=document.querySelectorAll(".content"); // querySelector
+        function checkText(){
+            console.log(ele);
+        }
+    </script>
+ </body>
+ </html>

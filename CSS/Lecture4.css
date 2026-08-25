@@ -1,0 +1,39 @@
+/* BOX MODEL */
+
+
+/* HEIGHT & WIDTH */
+div{
+    /* HEIGHT & WIDTH */
+    height: 200px;
+    width: 500px;
+    text-align: center;
+    background-color: red;
+    /* BORDER */
+    border-width: 5px;
+    border-style: solid;
+    border-color: black; 
+    border-radius: 15px;
+    /* FOR SPACE BETWEEN TWO BORDER. */
+    /* margin-bottom: 25px;
+    margin-top: 10px; */
+    margin: 20px 50px;
+    
+
+}
+h1{
+    /* border-width: 2px;
+    border-style: dashed;
+    border-color: green; */
+    border: 2px dashed green
+}
+button{
+    height: 50px;
+    width: 150px;
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: orange;
+    cursor: pointer;
+}

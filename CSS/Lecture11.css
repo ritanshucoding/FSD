@@ -1,0 +1,10 @@
+/* BACKGROUND IMAGE */
+div{ */
+    width: 400px;
+    height: 200px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url(photo-1580133318324-f2f76d987dd8.avif);
+    background-size: cover;
+    color: white;
+}
